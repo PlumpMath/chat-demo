@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Pombos</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Aviário da PM</h1>
+      <h4 id="nick"></h4>
+      <div>
+	<ul id="log">
+	</ul>
+      </div>
+      <input id="message" type="text" size="80"/><button id="submit-button">Dá-lhe!</button>
+    </div>
+    <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+    <script src="client/goog/base.js" type="text/javascript"></script>
+    <script src="client/chat.js" type="text/javascript"></script>
+    <script type="text/javascript">goog.require("async_pm.client.chat");</script>
+  </body>
+</html>
